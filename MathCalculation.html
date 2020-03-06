@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lange="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gopihand">
+    <meta name="description" content="This is Developer page">
+
+    <title>About Me</title>
+    <link href="styles/gopichand.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg background">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <header class="collapse navbar-collapse" id="basicExampleNav">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutme.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="MathCalculation.html">MathCalculation</a>
+
+
+                    </li>
+                </ul>
+            </header>
+        </nav>
+    </header>
+    <!--/.Navbar-->
+    <form class="gopi">
+        <h2>Multiplication Calculation</h2>
+
+        <p>Number1: </p>
+        <input type="text" id="Number1" min="1" max="100" placeholder="Enter number between 1-100" required>
+        <br>
+        <p>Number2: </p>
+        <input type="text" id="Number2" min="1" max="100" placeholder="Enter number between 1-100" required>
+        <br>
+        <p>Number3: </p>
+        <input type="text" id="Number3" min="1" max="100" placeholder="Enter number between 1-100" required>
+        <br>
+        <p>Number4: </p>
+        <input type="text" id="Number4" min="1" max="100" placeholder="Enter number between 1-100" required><br>
+        <br>
+        Result is:
+        <input type="text" id="Number5"><br><br>
+        <button type="button" id="multiply" onclick="multiplyBy()">Multiplication</button></br><br>
+        
+    </form>
+
+    <!-- <script>
+        function multiplyBy() {
+            num1 = document.getElementById("Number1").value;
+            num2 = document.getElementById("Number2").value;
+            num3 = document.getElementById("Number3").value;
+            num4 = document.getElementById("Number4").value;
+            document.getElementById("multiply").innerHTML = num1 * num2 * num3 * num4;
+        }
+            
+        
+    </script> -->
+
+
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+
+<script src="mathcalculation.js"></script>
+</body>
+<footer>
+    <div>
+        <p> &copy Copyright Gopichand Bandarupalli</p>
+    </div>
+</footer>
+
+</html>
