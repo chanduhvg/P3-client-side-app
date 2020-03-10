@@ -63,25 +63,15 @@
     <form class="gopi">
         <h2>Multiplication Calculation</h2>
 
-        <p>Number1: </p>
-        <input type="text" id="Number1" min="1" max="100" placeholder="Enter number between 1-100" required>
-        <br>
-        <p>Number2: </p>
-        <input type="text" id="Number2" min="1" max="100" placeholder="Enter number between 1-100" required>
-        <br>
-        <p>Number3: </p>
-        <input type="text" id="Number3" min="1" max="100" placeholder="Enter number between 1-100" required>
-        <br>
-        <p>Number4: </p>
-        <input type="text" id="Number4" min="1" max="100" placeholder="Enter number between 1-100" required><br>
-        <br>
-        Result is:
-        <input type="text" id="Number5"><br><br>
-        <button type="button" id="multiply" onclick="multiplyBy()">Multiplication</button></br><br>
-        <hr>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        3rd Number : <input type="text" id="thirdNumber" /><br>
+        4th Number: <input type="text" id="fourthNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <p>The Result is : <br>
+            <span id = "result"></span><br>
 
-        <input type="button" class="btn btn-primary" value="getcatImage" id="getscore"><br><br>
-        <img type="text" id="catarea">
+            <button id="getJokeButton" class="btn btn-success">Fetch Joke</button>
 
         
     </form>
@@ -116,6 +106,8 @@
 
 
 <script src="mathcalculation.js"></script>
+<script src="mathcalculation.test.js"></script>
+
 </body>
 <footer>
     <div>
