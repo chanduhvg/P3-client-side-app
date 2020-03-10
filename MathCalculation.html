@@ -69,11 +69,18 @@
         4th Number: <input type="text" id="fourthNumber" /><br>
         <input type="button" onClick="multiplyBy()" Value="Multiply" />
         <p>The Result is : <br>
-            <span id = "result"></span><br>
+            <span id="result"></span><br>
 
-            <button id="getJokeButton" class="btn btn-success">Fetch Joke</button>
+            <section>
+                <div class="api">
+                    <button onclick="gopi()">FetchCat</button>
+                    <br>
 
-        
+                    <img id="result">
+                </div>
+            </section>
+
+
     </form>
 
     <!-- <script>
@@ -84,31 +91,11 @@
             num4 = document.getElementById("Number4").value;
             document.getElementById("multiply").innerHTML = num1 * num2 * num3 * num4;
         }
-            
-        
     </script> -->
 
-
-
-
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
-
-
-<script src="mathcalculation.js"></script>
-<script src="mathcalculation.test.js"></script>
-
 </body>
+    <script src="mathcalculation.js"></script>
+    <script src="ajax.js"></script>
 <footer>
     <div>
         <p> &copy Copyright Gopichand Bandarupalli</p>

@@ -17,8 +17,16 @@ function multiplyBy()
       const  num2 = document.getElementById("secondNumber").value;
       const  num3 = document.getElementById("thirdNumber").value;
       const  num4 = document.getElementById("fourthNumber").value;
-      
-      document.getElementById("result").innerHTML = mult(num1,num2,num3,num4)
+      localStorage.setItem("num1",num1)
+      localStorage.setItem("num2",num2)
+      localStorage.setItem("num3",num3)
+      localStorage.setItem("num4",num4)
+      let a=localStorage.getItem("num1")
+      let b=localStorage.getItem("num2")
+      let c=localStorage.getItem("num3")
+      let d=localStorage.getItem("num4")
+      let e=mult(a,b,c,d)
+      document.getElementById("result").innerHTML = e
 }
 
 
@@ -54,26 +62,3 @@ function multiplyBy()
     
 //     document.getElementById('Multiply').value = result;
 // }
-
-const jokeURI = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]'
-
-// fetch information
-const getJoke = async () => {
-  try {
-    const response = await fetch(jokeURI)
-    const obj = await response.json()
-    console.log(`FETCHED. Response JSON ${obj}`)
-    const joke = obj.value.joke || 'No joke for you.'
-    return joke
-  } catch (error) { console.error(error) }
-}
-
-// interact with DOM
-const updateWithJoke = async (event) => {
-  try {
-    document.querySelector('#result').innerHTML = ''
-    const answer = await getJoke()
-    document.querySelector('#result').innerHTML = answer
-  } catch (error) { console.error(error) }
-}
-
